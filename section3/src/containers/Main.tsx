@@ -2,8 +2,9 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from '../components/Navbar'
 // import Footer from '../components/Footer'
-// import Home from "../pages/Home/Home"
-// import Mechanics from "../pages/Mechanics/Mechanics"
+import Home from "../pages/Home"
+import Threejs1 from "../pages/Threejs1"
+import P5js1 from "../pages/P5js1"
 // import SpureGear from '../pages/3DModel/SpureGear';
 // import TurbofanEngine from "../pages/3DModel/Turbofan"
 // import F6Boxer from "../pages/3DModel/F6Boxer"
@@ -16,7 +17,14 @@ import Navbar from '../components/Navbar'
 export default function Main() {
     return (
         <>
-        <Router><Navbar /></Router>
+        <Router>
+            <Navbar />
+            <Switch>
+                <Route path='/' exact component={Home} />
+                <Route path='/threejs1' exact component={Threejs1} />
+                <Route path='/p5js1' exact component={P5js1} />
+            </Switch>
+        </Router>
         </>
         // // <Router>
         //     {/* <Navbar /> */}

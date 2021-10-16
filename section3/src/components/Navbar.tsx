@@ -13,29 +13,29 @@ export default function Navbar() {
 
 							<Link to="/" className="flex items-center py-4 px-2">
 									{/* <img src={LogoWhite} alt="Logo" className="h-8 w-8 mr-2" /> */}
-									<span className="font-semibold font-Overpass text-white text-lg">IntARactive</span>
+									<span className="font-semibold font-Overpass text-white text-lg">VIS 142</span>
 							</Link>
 
 
 							<div className="hidden md:flex items-center space-x-1">
-								<Link to="/"
+								<Link to="/threejs1"
 									className="py-4 px-2 text-gray-300 font-Overpass hover:text-blue-light transition duration-300 ">
-									Home
+									threejs1
+								</Link>
+
+								<Link to="/p5js1"
+									className="py-4 px-2 text-gray-300 font-Overpass hover:text-blue-light transition duration-300">
+									p5js1
 								</Link>
 
 								<Link to="/"
 									className="py-4 px-2 text-gray-300 font-Overpass hover:text-blue-light transition duration-300">
-									Mechanics
+									Mainproject
 								</Link>
 
 								<Link to="/"
 									className="py-4 px-2 text-gray-300 font-Overpass hover:text-blue-light transition duration-300">
-									About
-								</Link>
-
-								<Link to="/"
-									className="py-4 px-2 text-gray-300 font-Overpass hover:text-blue-light transition duration-300">
-									Chatroom
+									OvO
 								</Link>
 
 							</div>
